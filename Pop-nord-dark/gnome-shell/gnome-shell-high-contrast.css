@@ -1,0 +1,35 @@
+/* This stylesheet is generated, DO NOT EDIT */
+/* Copyright 2009, 2015 Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+/* Global Values */
+stage {
+  font-size: 11pt;
+  color: #d8dee9; }
+
+/* Common Stylings */
+stage {
+  -st-icon-style: symbolic; }
+
+.toggle-switch {
+  width: 48px; }
+
+.toggle-switch-us, .toggle-switch-intl {
+  background-image: url("resource:///org/gnome/shell/theme/toggle-off-hc.svg"); }
+  .toggle-switch-us:checked, .toggle-switch-intl:checked {
+    background-image: url("resource:///org/gnome/shell/theme/toggle-on-hc.svg"); }
