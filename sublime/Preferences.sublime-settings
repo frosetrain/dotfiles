@@ -1,0 +1,19 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Nord.sublime-color-scheme",
+	"font_face": "JetBrains Mono",
+	"font_size": 13,
+	"line_padding_bottom": 2.6,
+	"scroll_past_end": false,
+	"gutter": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"indent_guide_options": [
+		"draw_normal",
+		"draw_active"
+	],
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}
