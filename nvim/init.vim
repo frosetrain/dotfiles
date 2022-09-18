@@ -1,30 +1,15 @@
 call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
+Plug 'overcache/NeoSolarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'ayu-theme/ayu-vim'
-Plug 'challenger-deep-theme/vim'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'safv12/andromeda.vim'
-Plug 'tomasr/molokai'
-Plug 'jdkanani/vim-material-theme'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
-Plug 'psf/black', {'branch': 'stable'}
-Plug 'dense-analysis/ale'
-Plug 'nvie/vim-flake8'
-Plug 'tpope/vim-fugitive'
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'sirver/ultisnips'
-Plug 'mkitt/tabline.vim'
 Plug 'preservim/vim-pencil'
-Plug 'preservim/tagbar'
-Plug 'andweeb/presence.nvim'
 call plug#end()
 
 augroup LightLineColorscheme
@@ -36,16 +21,10 @@ function! s:lightline_update()
   if !exists('g:loaded_lightline')
     return
   endif
-  try
-    if g:colors_name =~# 'nord\|dracula\|onedark\|palenight\|ayu\|molokai\|material-theme'
-      let g:lightline.colorscheme = substitute(substitute(g:colors_name, '-', '_', 'g'), '256.*', '', '') .
-            \ (g:colors_name ==# 'solarized' ? '_' . &background : '')
-      call lightline#init()
-      call lightline#colorscheme()
-      call lightline#update()
-    endif
-  catch
-  endtry
+  let g:lightline.colorscheme = substitute(g:colors_name, 'NeoS', 's', '')
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
 endfunction
 
 nmap <C-_> <Plug>NERDCommenterToggle
@@ -164,16 +143,6 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
-
-try
-    colorscheme desert
-catch
-endtry
 
 set background=dark
 
@@ -415,14 +384,13 @@ endfunction
 
 syntax on
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'readonly', 'filename', 'modified'] ],
-      \   'right': [ [ 'lineinfo' ], ['percent'], ['kite']]
+      \   'right': [ [ 'lineinfo' ], ['percent']]
       \ },
       \ 'component': {
-      \   'kite': '%{kite#statusline()}',
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
       \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
@@ -437,21 +405,11 @@ let g:lightline = {
       \ }
 let NERDTreeQuitOnOpen=1
 let NERDTreeMinimalUI=1
-let ayucolor='mirage'
-let g:jedi#environment_path = "~/Endeavours/ptfs-flights/venv/bin/python3.10"
-colorscheme nord
-set encoding=utf-8
+colorscheme NeoSolarized
 set nowrap
-set noshowmode
 set termguicolors
 set number
-set noswapfile
-set scrolloff=7
-set backspace=indent,eol,start
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 set expandtab
 set autoindent
-set fileformat=unix
+set mouse=a
 
