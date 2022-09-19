@@ -400,13 +400,12 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
       \ },
-	  \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3"}
       \ }
 let NERDTreeQuitOnOpen=1
 let NERDTreeMinimalUI=1
 colorscheme NeoSolarized
 set nowrap
+set noshowmode
 set termguicolors
 set number
 set expandtab
