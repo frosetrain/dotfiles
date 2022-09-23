@@ -8,8 +8,6 @@
 - link:
     # Terminal
     ~/.zshrc: zshrc
-    ~/.oh-my-zsh: oh-my-zsh
-    ~/.p10k.zsh: p10k.zsh
     ~/.config/nvim: nvim
 
     # Developer tools
