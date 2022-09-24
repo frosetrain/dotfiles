@@ -83,7 +83,6 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,3 +114,4 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /home/zixi/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
