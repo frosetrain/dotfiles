@@ -1,8 +1,26 @@
 {
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 1.5
+  "workbench.colorTheme": "Solarized Dark",
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.5,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black"
 }
