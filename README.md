@@ -2,6 +2,8 @@
 
 These are my dotfiles from Arch Linux.
 
+![Screenshot](scrot.png)
+
 ## Stuff
 
 * Distro: [Arch Linux](https://archlinux.org)
