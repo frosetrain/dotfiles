@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Solarized Dark",
   "files.autoSave": "afterDelay",
   "editor.fontFamily": "'FiraCode Nerd Font', monospace",
   "editor.fontSize": 16,
@@ -22,5 +21,8 @@
   "security.workspace.trust.untrustedFiles": "open",
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "editor.cursorBlinking": "expand",
+  "git.autofetch": true,
+  "editor.stickyScroll.enabled": true
 }
