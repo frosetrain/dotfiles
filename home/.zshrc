@@ -79,6 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    poetry
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
@@ -110,10 +111,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pi="sudo pacman -S"
-alias pu="sudo pacman -Syu"
+alias zi="sudo zypper in"
+alias zu="sudo zypper update"
 alias py="python3"
-alias wmconfig="vim ~/.config/qtile/config.py"
+alias pyrun="poetry run python3 -m"
 alias v="vim"
 alias c="clear"
 alias open="xdg-open"
@@ -122,11 +123,10 @@ alias copy="xclip -sel clip"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval $(thefuck --alias)
-
 export PATH=$PATH:~/.local/bin
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-    exec startx
-fi
 
+# pnpm
+export PNPM_HOME="/home/zixi/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

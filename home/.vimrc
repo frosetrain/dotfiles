@@ -410,7 +410,7 @@ let g:lightline = {
       \ }
 let NERDTreeQuitOnOpen=1
 let NERDTreeMinimalUI=1
-colo onedark
+colo nord
 set nowrap
 set noshowmode
 set termguicolors
