@@ -20,6 +20,9 @@ return require("packer").startup(function(use)
     use("williamboman/mason.nvim")
 
     -- coding things
+    use({ "neoclide/coc.nvim", branch = "release" })
+    use("mfussenegger/nvim-lint")
+    use("mhartington/formatter.nvim")
     use({
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
@@ -44,4 +47,5 @@ return require("packer").startup(function(use)
     })
     use("akinsho/bufferline.nvim")
     use("nvim-tree/nvim-tree.lua")
+    use("lewis6991/gitsigns.nvim")
 end)

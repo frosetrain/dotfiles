@@ -4,17 +4,14 @@ require("plugins")
 require("gui")
 require("misc")
 require("keybinds")
+require("lang")
 
 require("mason").setup()
-require("nvim-treesitter.configs").setup({
-    ensure_installed = { "cpp", "lua", "python" },
-    highlight = { enable = true },
-})
 require("nvim-autopairs").setup()
 require("lualine").setup()
 require("bufferline").setup()
 require("nvim-tree").setup()
+require("gitsigns").setup()
+-- more stuff is set up in lang.lua
 
 vim.cmd("colo onedark")
-vim.cmd("NvimTreeFocus")
-
