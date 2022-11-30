@@ -111,12 +111,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zi="sudo zypper in"
-alias zu="sudo zypper update"
+alias pi="sudo pacman -S"
+alias pu="sudo pacman -Syu"
 alias py="python3"
 alias pyrun="poetry run python3 -m"
-alias v="vim"
+alias v="gnvim --disable-ext-cmdline --disable-ext-popupmenu --disable-ext-tabline --gtk-prefer-dark-theme"
 alias c="clear"
+alias e="exit"
 alias open="xdg-open"
 alias copy="xclip -sel clip"
 
@@ -125,8 +126,3 @@ alias copy="xclip -sel clip"
 
 export PATH=$PATH:~/.local/bin
 
-
-# pnpm
-export PNPM_HOME="/home/zixi/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
