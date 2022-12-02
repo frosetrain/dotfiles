@@ -17,5 +17,4 @@ theme='style-1'
 ## Run
 rofi \
     -show drun \
-    -theme ${dir}/${theme}.rasi \
-    -kb-cancel 'Alt+space'
+    -theme ${dir}/${theme}.rasi

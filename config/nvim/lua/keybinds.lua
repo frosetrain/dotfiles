@@ -26,6 +26,11 @@ keyset("n", "<leader>=", "<C-w>=")
 keyset("n", "<leader>,", "<C-w><")
 keyset("n", "<leader>.", "<C-w>>")
 
+-- clear search highlighting
+keyset("n", "<leader>c", function()
+    vim.cmd("noh")
+end)
+
 -- bufferline
 keyset("n", "gt", function()
     vim.cmd("BufferLineCycleNext")
@@ -33,7 +38,9 @@ end)
 keyset("n", "gT", function()
     vim.cmd("BufferLineCyclePrev")
 end)
-keyset("n", "<leader>q", function() vim.cmd("BufferLineCloseLeft") end)
+keyset("n", "<leader>q", function()
+    vim.cmd("BufferLineCloseLeft")
+end)
 
 -- coc stuff
 local opts = { silent = true, noremap = true, expr = true, replace_keycodes = false }

@@ -1,0 +1,55 @@
+* {
+  font-family: FiraCode Nerd Font, Cantarell, sans-serif;
+  font-size: 14px;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.horizontal {
+  padding: 2px;
+}
+
+window#waybar {
+  background: #2e3440;
+  color: #eceff4;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#custom-launcher {
+  font-size: 24px;
+  padding: 5px;
+}
+
+#workspaces button.active {
+  color: #88c0d0;
+}
+
+#pulseaudio {
+  color: #ebcb8b;
+}
+
+#custom-pacman {
+  color: #81a1c1;
+}
+
+#cpu {
+  color: #d08770;
+}
+
+#memory {
+  color: #b48ead;
+}
+
+#network {
+  color: #a3be8c;
+}
+
+#custom-powermenu {
+  color: #bf616a;
+  margin-right: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

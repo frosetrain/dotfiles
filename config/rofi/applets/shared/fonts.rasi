@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "Fira Code 11";
+    font: "JetBrains Mono Nerd Font 10";
 }

@@ -26,6 +26,12 @@ require("formatter").setup({
                 }
             end,
         },
+        json = {
+            require("formatter.filetypes.json").fixjson,
+        },
+        css = {
+            require("formatter.filetypes.css").prettier,
+        },
         ["*"] = {
             require("formatter.filetypes.any").remove_trailing_whitespace,
         },

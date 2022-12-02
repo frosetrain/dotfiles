@@ -94,11 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -111,18 +111,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pi="sudo pacman -S"
-alias pu="sudo pacman -Syu"
+alias y="sudo pacman -Syu"
 alias py="python3"
 alias pyrun="poetry run python3 -m"
-alias v="gnvim --disable-ext-cmdline --disable-ext-popupmenu --disable-ext-tabline --gtk-prefer-dark-theme"
+alias v="nvim"
 alias c="clear"
 alias e="exit"
 alias open="xdg-open"
 alias copy="xclip -sel clip"
+alias yeetus="find . -xtype l -exec rm {} \;"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=$PATH:~/.local/bin
-

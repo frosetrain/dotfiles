@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Screenshot'
-mesg="DIR: ~/Pictures/Screenshots"
+mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
 
 if [[ "$theme" == *'type-1'* ]]; then
 	list_col='1'
@@ -67,12 +67,24 @@ run_rofi() {
 # Screenshot
 time=`date +%Y-%m-%d-%H-%M-%S`
 geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
-dir="/home/zixi/Pictures/Screenshots"
+dir="`xdg-user-dir PICTURES`/Screenshots"
 file="Screenshot_${time}_${geometry}.png"
 
 if [[ ! -d "$dir" ]]; then
 	mkdir -p "$dir"
 fi
+
+# notify and view screenshot
+notify_view() {
+	notify_cmd_shot='dunstify -u low --replace=699'
+	${notify_cmd_shot} "Copied to clipboard."
+	viewnior ${dir}/"$file"
+	if [[ -e "$dir/$file" ]]; then
+		${notify_cmd_shot} "Screenshot Saved."
+	else
+		${notify_cmd_shot} "Screenshot Deleted."
+	fi
+}
 
 # Copy screenshot to clipboard
 copy_shot () {
@@ -90,29 +102,29 @@ countdown () {
 # take shots
 shotnow () {
 	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
-	notify-send "done"
+	notify_view
 }
 
 shot5 () {
 	countdown '5'
 	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
-	notify-send "done"
+	notify_view
 }
 
 shot10 () {
 	countdown '10'
 	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
-	notify-send "done"
+	notify_view
 }
 
 shotwin () {
 	cd ${dir} && maim -u -f png -i `xdotool getactivewindow` | copy_shot
-	notify-send "done"
+	notify_view
 }
 
 shotarea () {
 	cd ${dir} && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | copy_shot
-	notify-send "done"
+	notify_view
 }
 
 # Execute Command
