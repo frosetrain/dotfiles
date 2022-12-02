@@ -119,6 +119,7 @@ alias c="clear"
 alias e="exit"
 alias open="xdg-open"
 alias copy="xclip -sel clip"
+alias t="python3 ~/.freme/cli.py"
 alias yeetus="find . -xtype l -exec rm {} \;"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
