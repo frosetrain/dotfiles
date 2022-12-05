@@ -1,14 +1,15 @@
 # Frosetrain's Dotfiles
 
-These are my dotfiles from Arch Linux.
+These are the dotfiles for my Arch rice.
 
 ![Screenshot](scrot.png)
 
 ## Stuff
 
 * Distro: [Arch Linux](https://archlinux.org)
-* WM: [Qtile](http://qtile.org)
-* Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
-* Bar: polybar with config stolen from [adi1090x](https://github.com/adi1090x/polybar-themes)
-* Launcher: rofi with config stolen from [adi1090x](https://github.com/adi1090x/rofi)
-* Compositor: [picom (jonaburg's fork)](https://github.com/jonaburg/picom)
+* Wayland Compositor: Hyprland
+* Terminal: Kitty
+* Bar: Waybar
+* Launcher: Rofi (patched with Wayland support) with config from [adi1090x](https://github.com/adi1090x/rofi)
+
+Includes a theme switcher script (idk why it's called freme) to switch between Nord, Dracula, One Dark and Catppuccin (Macchiato).
