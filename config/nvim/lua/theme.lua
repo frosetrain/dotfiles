@@ -1,1 +1,1 @@
-vim.cmd('colo catppuccin_macchiato')
+vim.cmd('colo nord')

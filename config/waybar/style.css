@@ -11,8 +11,8 @@
 }
 
 window#waybar {
-  background: #24273a;
-  color: #cad3f5;
+  background: #2e3440;
+  color: #d8dee9;
   opacity: 0.8;
   margin-top: 10px;
   border-radius: 10px;
@@ -24,31 +24,31 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: #8aadf4;
+  color: #88c0d0;
 }
 
 #pulseaudio {
-  color: #eed49f;
+  color: #ebcb8b;
 }
 
 #custom-pacman {
-  color: #7dc4e4;
+  color: #81a1c1;
 }
 
 #cpu {
-  color: #f5a97f;
+  color: #d08770;
 }
 
 #memory {
-  color: #b7bdf8;
+  color: #b48ead;
 }
 
 #network {
-  color: #a6da95;
+  color: #a3be8c;
 }
 
 #custom-powermenu {
-  color: #ed8796;
+  color: #bf616a;
   margin-right: 16px;
 }
 

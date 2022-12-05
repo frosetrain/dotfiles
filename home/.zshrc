@@ -111,7 +111,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias y="sudo pacman -Syu"
+alias y="yay"
 alias py="python3"
 alias pyrun="poetry run python3 -m"
 alias v="nvim"
@@ -119,10 +119,12 @@ alias c="clear"
 alias e="exit"
 alias open="xdg-open"
 alias copy="xclip -sel clip"
-alias t="python3 ~/.freme/cli.py"
+alias t="python3 ~/.freme/main.py"
 alias yeetus="find . -xtype l -exec rm {} \;"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=$PATH:~/.local/bin
+
+eval $(thefuck --alias)

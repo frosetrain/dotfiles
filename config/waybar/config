@@ -45,7 +45,7 @@
         "format-alt": "墳 {desc}"
     },
     "custom/pacman": {
-        "exec": "scripts/updates.sh",
+        "exec": "~/.config/waybar/scripts/updates.sh",
         "exec-if": "exit 0",
         "on-click": "kitty -e 'yay'; pkill -SIGRTMIN+8 waybar",
         "interval": "600",

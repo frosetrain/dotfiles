@@ -7,3 +7,5 @@
 [user]
 	email = 80436189+frosetrain@users.noreply.github.com
 	name = Frosetrain
+[init]
+	defaultBranch = main
