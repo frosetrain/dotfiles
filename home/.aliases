@@ -1,0 +1,6 @@
+#!/bin/zsh
+alias y="yay"
+alias e="exit"
+alias c="clear"
+alias py="python3"
+alias v="nvim"
