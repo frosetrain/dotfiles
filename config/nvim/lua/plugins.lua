@@ -35,11 +35,10 @@ return require("packer").startup(function(use)
     -- colorschemes
     use({ "dracula/vim", as = "dracula" })
     use({ "arcticicestudio/nord-vim", as = "nord" })
-    use("joshdick/onedark.vim")
-    use("drewtempelmeyer/palenight.vim")
+    use("sainnhe/sonokai")
+    use("sainnhe/edge")
     use("catppuccin/vim")
     use("overcache/NeoSolarized")
-    use("morhetz/gruvbox")
 
     -- visual stuff
     use("kyazdani42/nvim-web-devicons")

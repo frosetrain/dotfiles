@@ -6,7 +6,7 @@ require("nvim-treesitter.configs").setup({
 })
 
 require("lint").linters_by_ft = {
-    python = { "flake8", "pydocstyle" },
+    python = { "flake8" },
 }
 
 require("formatter").setup({

@@ -1,1 +1,1 @@
-vim.cmd('colo nord')
+vim.cmd('colo sonokai')
