@@ -39,6 +39,8 @@ return require("packer").startup(function(use)
     use("sainnhe/edge")
     use("catppuccin/vim")
     use("overcache/NeoSolarized")
+    use("projekt0n/github-nvim-theme")
+    use("aktersnurra/no-clown-fiesta.nvim")
 
     -- visual stuff
     use("kyazdani42/nvim-web-devicons")
