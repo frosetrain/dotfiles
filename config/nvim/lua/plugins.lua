@@ -23,24 +23,21 @@ return require("packer").startup(function(use)
     use({ "neoclide/coc.nvim", branch = "release" })
     use("mfussenegger/nvim-lint")
     use("mhartington/formatter.nvim")
-    use({
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-    })
     use("windwp/nvim-autopairs")
     use("gpanders/editorconfig.nvim")
     use("numToStr/Comment.nvim")
     use("Fymyte/rasi.vim")
 
     -- colorschemes
-    use({ "dracula/vim", as = "dracula" })
-    use({ "arcticicestudio/nord-vim", as = "nord" })
+    use({
+        "mcchrish/zenbones.nvim",
+        requires = "rktjmp/lush.nvim",
+    })
+    use("briones-gabriel/darcula-solid.nvim")
     use("sainnhe/sonokai")
-    use("sainnhe/edge")
-    use("catppuccin/vim")
-    use("overcache/NeoSolarized")
     use("projekt0n/github-nvim-theme")
-    use("aktersnurra/no-clown-fiesta.nvim")
+    use("davidosomething/vim-colors-meh")
+    use("sainnhe/edge")
 
     -- visual stuff
     use("kyazdani42/nvim-web-devicons")

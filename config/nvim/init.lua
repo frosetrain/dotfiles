@@ -1,7 +1,6 @@
 -- Neovim config file by Frosetrain
 
 require "plugins"
-require "gui"
 require "misc"
 
 require("mason").setup()

@@ -1,10 +1,5 @@
 local util = require("formatter.util")
 
-require("nvim-treesitter.configs").setup({
-    ensure_installed = { "cpp", "lua", "python" },
-    highlight = { enable = true },
-})
-
 require("lint").linters_by_ft = {
     python = { "flake8" },
 }

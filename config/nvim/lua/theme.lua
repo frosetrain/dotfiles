@@ -1,1 +1,1 @@
-vim.cmd('colo sonokai')
+vim.cmd.colo("darcula-solid")
