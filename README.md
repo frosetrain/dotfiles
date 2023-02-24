@@ -1,10 +1,10 @@
 # Frosetrain's Dotfiles
 
-These are the dotfiles for my Arch rice.
+I actually no longer use Hyprland, as I switched to KDE on Arch.
+
+### Details of my old no-longer-existent Hyprland rice
 
 ![Screenshot](scrot.png)
-
-## Stuff
 
 * Distro: [Arch Linux](https://archlinux.org)
 * Wayland Compositor: Hyprland
