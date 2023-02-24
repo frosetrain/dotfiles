@@ -10,6 +10,9 @@ require("formatter").setup({
             require("formatter.filetypes.python").black,
             require("formatter.filetypes.python").isort,
         },
+        cpp = {
+            require("formatter.filetypes.cpp").clangformat,
+        },
         lua = {
             require("formatter.filetypes.lua").stylua,
             function()

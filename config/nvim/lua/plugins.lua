@@ -29,15 +29,16 @@ return require("packer").startup(function(use)
     use("Fymyte/rasi.vim")
 
     -- colorschemes
-    use({
-        "mcchrish/zenbones.nvim",
-        requires = "rktjmp/lush.nvim",
-    })
-    use("briones-gabriel/darcula-solid.nvim")
+    use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
     use("sainnhe/sonokai")
     use("projekt0n/github-nvim-theme")
-    use("davidosomething/vim-colors-meh")
     use("sainnhe/edge")
+    use("cocopon/iceberg.vim")
+    use("arcticicestudio/nord-vim")
+    use("folke/tokyonight.nvim")
+    use("nanotech/jellybeans.vim")
+    use("kvrohit/substrata.nvim")
+    use("kvrohit/rasmus.nvim")
 
     -- visual stuff
     use("kyazdani42/nvim-web-devicons")
