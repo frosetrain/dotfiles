@@ -1,1 +1,1 @@
-vim.cmd.colo("darcula-solid")
+vim.cmd.colo("edge")
