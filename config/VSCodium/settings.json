@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'Red Hat Mono Medium', 'Fira Code Medium', 'monospace', monospace",
+    "editor.fontSize": 15,
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.lineHeight": 1.5,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "isort.check": true,
+    "editor.stickyScroll.enabled": true,
+    "git.autofetch": true,
+    "editor.fontLigatures": true
+}

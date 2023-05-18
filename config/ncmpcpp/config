@@ -1,13 +1,144 @@
-mpd_host = localhost
-mpd_port = 6600
-mpd_music_dir = ~/Music
-
-visualizer_data_source = "/tmp/mpd.fifo"
-visualizer_output_name = "my_fifo"
-visualizer_in_stereo = "yes"
-visualizer_type = "spectrum"
-visualizer_look = "+|"
-
+##############################################################
+## This is an example configuration file. Copy it to        ##
+## $XDG_CONFIG_HOME/ncmpcpp/config or $HOME/.ncmpcpp/config ##
+## and set up your preferences.                             ##
+##############################################################
+#
+##### directories ######
+##
+## Directory for storing ncmpcpp related files.  Changing it is useful if you
+## want to store everything somewhere else and provide command line setting for
+## alternative location to config file which defines that while launching
+## ncmpcpp.
+##
+#
+#ncmpcpp_directory = ~/.config/ncmpcpp
+#
+##
+## Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other
+## MPD clients (eg. ncmpc) also use that location.
+##
+#
+#lyrics_directory = ~/.lyrics
+#
+##### connection settings #####
+#
+#mpd_host = localhost
+#
+mpd_port = 6666
+#
+#mpd_connection_timeout = 5
+#
+## Needed for tag editor and file operations to work.
+##
+#mpd_music_dir = ~/music
+#
+#mpd_crossfade_time = 5
+#
+# Exclude pattern for random song action
+# http://www.boost.org/doc/libs/1_46_1/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html
+#random_exclude_pattern = "^(temp|midi_songs).*"
+#
+##### music visualizer #####
+##
+## In order to make music visualizer work with MPD you need to use the fifo
+## output. Its format parameter has to be set to 44100:16:1 for mono
+## visualization or 44100:16:2 for stereo visualization. As an example here is
+## the relevant section for mpd.conf:
+##
+## audio_output {
+##        type            "fifo"
+##        name            "Visualizer feed"
+##        path            "/tmp/mpd.fifo"
+##        format          "44100:16:2"
+## }
+##
+## If the visualization on occasion diverges from the audio output, please set
+## 'buffer_time' parameter of your audio output in mpd.conf to '100000' (100ms)
+## or less to prevent that from happening.
+##
+## Note: If you're using Mopidy, an address of a udpsink gstreamer's output is
+## also accepted. For example, the following section in mopidy.conf:
+##
+## [audio]
+## output = tee name=t ! queue ! autoaudiosink t.
+##        ! queue ! audio/x-raw,rate=44100,channels=2,format=S16LE
+##        ! udpsink host=localhost port=5555
+##
+## will make localhost:5555 available as a source of data for the stereo
+## visualizer.
+##
+#
+#visualizer_data_source = /tmp/mpd.fifo
+#
+##
+## Note: Below parameter is needed for ncmpcpp to determine which output
+## provides data for visualizer and reset it at the beginning of visualization
+## to synchronize with audio.
+##
+#
+#visualizer_output_name = Visualizer feed
+#
+##
+## If you set format to 44100:16:2, make it 'yes'.
+##
+#visualizer_in_stereo = yes
+#
+##
+## Note: set below to >=10 only if you have synchronization issues with
+## visualization and audio.
+##
+#
+#visualizer_sync_interval = 0
+#
+##
+## Note: To enable spectrum frequency visualization you need to compile ncmpcpp
+## with fftw3 support.
+##
+#
+## Available values: spectrum, wave, wave_filled, ellipse.
+##
+#visualizer_type = spectrum
+#
+#visualizer_fps = 60
+#
+#visualizer_autoscale = no
+#
+#visualizer_look = ●▮
+#
+#visualizer_color = blue, cyan, green, yellow, magenta, red
+#
+## Alternative subset of 256 colors for terminals that support it.
+##
+#visualizer_color = 47, 83, 119, 155, 191, 227, 221, 215, 209, 203, 197, 161
+#
+##
+## Note: The next few visualization options apply to the spectrum visualizer.
+##
+#
+## Use unicode block characters for a smoother, more continuous look.
+## This will override the visualizer_look option. With transparent terminals
+## and visualizer_in_stereo set, artifacts may be visible on the bottom half of
+## the visualization.
+#
+#visualizer_spectrum_smooth_look = yes
+#
+## A value between 1 and 5 inclusive. Specifying a larger value makes the
+## visualizer look at a larger slice of time, which results in less jumpy
+## visualizer output.
+#
+#visualizer_spectrum_dft_size = 2
+#
+#visualizer_spectrum_gain = 10
+#
+## Left-most frequency of visualizer in Hz, must be less than HZ MAX
+#
+#visualizer_spectrum_hz_min = 20
+#
+## Right-most frequency of visualizer in Hz, must be greater than HZ MIN
+#
+#visualizer_spectrum_hz_max = 20000
+#
 ##### system encoding #####
 ##
 ## ncmpcpp should detect your charset encoding but if it failed to do so, you

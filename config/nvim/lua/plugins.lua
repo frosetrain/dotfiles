@@ -20,13 +20,11 @@ return require("packer").startup(function(use)
     use("williamboman/mason.nvim")
 
     -- coding things
-    use({ "neoclide/coc.nvim", branch = "release" })
     use("mfussenegger/nvim-lint")
     use("mhartington/formatter.nvim")
     use("windwp/nvim-autopairs")
     use("gpanders/editorconfig.nvim")
     use("numToStr/Comment.nvim")
-    use("Fymyte/rasi.vim")
 
     -- colorschemes
     use("sainnhe/sonokai")
