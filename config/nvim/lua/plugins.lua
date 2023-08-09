@@ -27,6 +27,7 @@ return require("packer").startup(function(use)
     use("numToStr/Comment.nvim")
 
     -- colorschemes
+    use("dracula/vim")
     use("sainnhe/sonokai")
     use("sainnhe/everforest")
     use("sainnhe/edge")
