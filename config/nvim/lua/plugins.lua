@@ -34,12 +34,7 @@ return require("packer").startup(function(use)
     use("catppuccin/nvim")
     use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
     use("projekt0n/github-nvim-theme")
-    use("cocopon/iceberg.vim")
     use("arcticicestudio/nord-vim")
-    use("folke/tokyonight.nvim")
-    use("nanotech/jellybeans.vim")
-    use("kvrohit/substrata.nvim")
-    use("kvrohit/rasmus.nvim")
 
     -- visual stuff
     use("kyazdani42/nvim-web-devicons")

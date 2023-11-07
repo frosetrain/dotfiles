@@ -1,1 +1,1 @@
-vim.cmd.colo("edge")
+vim.cmd.colo("nord")

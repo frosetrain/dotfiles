@@ -1,0 +1,11 @@
+theme = "nord"
+
+[editor]
+color-modes = true
+cursorline = true
+bufferline = "multiple"
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
