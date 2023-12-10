@@ -1,10 +1,15 @@
-theme = "nord"
+theme = "onedark"
 
 [editor]
 color-modes = true
 cursorline = true
 bufferline = "multiple"
 true-color = true
+
+[editor.lsp]
+auto-signature-help = false
+display-signature-help-docs = false
+goto-reference-include-declaration = false
 
 [editor.cursor-shape]
 insert = "bar"

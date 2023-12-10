@@ -1,0 +1,6 @@
+[[language]]
+name = "cpp"
+auto-format = true
+indent = { tab-width=4, unit="    " }
+formatter = { command = "clang-format" }
+language-servers = [{name="clangd", only-features=["document-highlight", "completion", "document-symbols", "workspace-symbols", "rename-symbol"]}]
