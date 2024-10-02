@@ -1,1 +1,0 @@
-vim.cmd.colo("nord")
