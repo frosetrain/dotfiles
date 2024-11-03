@@ -20,7 +20,6 @@ export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
 export PATH="/home/fros/.local/bin:$PATH"
 setopt EXTENDED_HISTORY
-setopt correct_all
 source ~/.aliases
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
