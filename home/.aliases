@@ -1,9 +1,11 @@
 #!/bin/zsh
 alias c="clear"
-alias cls="clear; ls"
 alias e="exit"
 alias ff="fastfetch"
+# alias hx="helix"
 alias mf="metaflac --remove --block-type=PICTURE,PADDING --dont-use-padding"
 alias orphans="pacman -Qdtq | sudo pacman -Rns -"
 alias shred="echo SHREDDING; sleep 5; shred -uvz"
+alias t="tt -showwpm -notheme -nohighlight"
+alias touchpad="sudo modprobe -r hid-multitouch && sudo modprobe hid-multitouch"
 alias ytm="yt-dlp -f ba -x -o '%(title)s.%(ext)s'"

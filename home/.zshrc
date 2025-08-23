@@ -11,15 +11,13 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 eval "$(zoxide init --cmd cd zsh)"
 export EDITOR='hx'
 export HISTSIZE=1000000
 export SAVEHIST=$HISTSIZE
-export PATH="/home/fros/.local/bin:$PATH"
+export PATH="/home/fros/.local/bin:/home/fros/.bun/bin:/home/fros/.cargo/bin:$PATH"
 setopt EXTENDED_HISTORY
 source ~/.aliases
+eval "$(direnv hook zsh)"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
