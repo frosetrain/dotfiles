@@ -1,62 +1,83 @@
 {
-    "editor.fontFamily": "'Iosevka Extended', 'monospace', monospace",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.list.smoothScrolling": true,
-    "editor.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.lineHeight": 1.4,
-    "git.autofetch": true,
-    "editor.formatOnSave": true,
-    "editor.bracketPairColorization.enabled": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.fontFamily": "'IoskeleyMono Nerd Font', monospace",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "editor.fontLigatures": true,
+  "workbench.startupEditor": "none",
+  "git.confirmSync": false,
+  "extensions.ignoreRecommendations": true,
+  "update.showReleaseNotes": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typst": false,
+  },
+  "C_Cpp.formatting": "clangFormat",
+  "git.openRepositoryInParentFolders": "never",
+  "python.defaultInterpreterPath": "/bin/python",
+  "git.autofetchPeriod": 60,
+  "tinymist.formatterIndentSize": 4,
+  "tinymist.lint.when": "onType",
+  "[csv]": {
+    "editor.inlayHints.maximumLength": 0,
+  },
+  "window.dialogStyle": "custom",
+  "editor.bracketPairColorization.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.scrollback": 10000,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "chat.viewSessions.orientation": "stacked",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[openfoam]": {
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false,
     },
-    "git.enableSmartCommit": true,
-    "editor.fontLigatures": true,
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[astro]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.startupEditor": "none",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "git.confirmSync": false,
-    "extensions.ignoreRecommendations": true,
-    "svelte.enable-ts-plugin": true,
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "explorer.excludeGitIgnore": true,
-    "update.showReleaseNotes": false,
-    "workbench.colorTheme": "Solarized Light",
-    "github.copilot.nextEditSuggestions.enabled": false,
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "python": true
-    },
-    "diffEditor.renderSideBySide": true,
-    "github.copilot.selectedCompletionModel": "",
-    "[html]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "C_Cpp.formatting": "clangFormat",
-    "git.openRepositoryInParentFolders": "never",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "python.defaultInterpreterPath": "/bin/python",
-    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "zenMode.showTabs": "none",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.restore": false,
+  "terminal.integrated.initialHint": false,
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.size": "fill",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "python.terminal.activateEnvironment": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": true,
+  "svelte.enable-ts-plugin": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+  },
+  "editor.formatOnSave": true,
+  "notebook.markup.fontSize": 14,
+  "editor.scrollBeyondLastLine": false,
+  "workbench.tree.indent": 20,
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "jetbrains-product-icon-theme",
+  "update.mode": "none",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+  },
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.tabSize": 4,
+  },
+  "workbench.colorTheme": "Light 2026",
+  "editor.lineHeight": 1.5,
 }

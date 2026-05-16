@@ -1,4 +1,5 @@
-theme = "onedark"
+theme = "solarized_dark"
+# theme = "monokai_pro"
 
 [editor]
 color-modes = true

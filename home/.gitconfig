@@ -9,15 +9,3 @@
 	name = frosetrain
 [init]
 	defaultBranch = main
-[pull]
-	rebase = false
-[push]
-	autoSetupRemote = true
-[diff "lockb"]
-	textconv = bun
-	binary = true
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f

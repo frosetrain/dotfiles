@@ -1,0 +1,75 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """[░▒▓](orange_500)\
+[ 󰣛 ](bg:orange_500 fg:white)\
+[](fg:orange_500 bg:orange_600)\
+$directory\
+[](fg:orange_600 bg:orange_700)\
+$git_branch\
+$git_status\
+[](fg:orange_700 bg:orange_800)\
+$bun\
+[ ](fg:orange_800)\
+ """
+# $python\
+
+palette = "international_orange"
+
+[palettes.international_orange]
+white = "#ffffff"
+orange_50 = "#fff6ec"
+orange_100 = "#ffecd3"
+orange_200 = "#ffd4a5"
+orange_300 = "#ffb56d"
+orange_400 = "#ff8a32"
+orange_500 = "#ff690a"
+orange_600 = "#ff4f00"
+orange_700 = "#cc3602"
+orange_800 = "#a12b0b"
+orange_900 = "#82260c"
+orange_950 = "#461004"
+black = "#000000"
+
+[directory]
+style = "fg:white bg:orange_600"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# [directory.substitutions]
+# "Downloads" = " "
+# "Music" = " "
+# "Pictures" = " "
+# "Projects" = "󰲋 "
+
+[git_branch]
+symbol = " "
+style = "bg:orange_700"
+format = '[[ $symbol $branch ](fg:white bg:orange_700)]($style)'
+
+[git_status]
+style = "bg:orange_700"
+conflicted = 'conflict ~${count}'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+untracked = '?${count}'
+stashed = '*${count}'
+modified = '!${count}'
+staged = '+${count}'
+renamed = '»${count}'
+deleted = '✘${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+format = '[[($conflicted )($stashed )($deleted )($renamed )($modified )($typechanged )($staged )($untracked )($ahead_behind )](fg:white bg:orange_700)]($style)'
+
+# [python]
+# symbol = ""
+# style = "bg:orange_800"
+# python_binary = [["uv", "run", "--no-python-downloads", "python"]]
+# format = '[[ $symbol( $version) ](fg:white bg:orange_800)]($style)'
+
+[bun]
+symbol = " "
+style = "bg:orange_800"
+format = '[ $symbol($version )]($style)'
